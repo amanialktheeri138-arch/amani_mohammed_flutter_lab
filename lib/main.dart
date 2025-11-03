@@ -14,12 +14,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+
       appBar: AppBar(
         centerTitle:true,
         title: Text("CV",style:TextStyle(fontSize:50,fontWeight:FontWeight.bold, color:Colors.purple),),
       ),
+
+
+
       body:SingleChildScrollView(
-    child: SingleChildScrollView(
+    
      child:  Column(
        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -63,11 +67,12 @@ class MyApp extends StatelessWidget {
                 ),
                 Divider(color: Colors.white,thickness: 3,),
                 Text("Scientific Skills",style: TextStyle(fontSize:25,fontWeight:FontWeight.bold, color:Colors.purpleAccent),),
-                Row(
-                  children: [
+
+
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                  children: [
+
                         Text("1- Bachelor`s Degree in Information Technology-Software",style: TextStyle(fontSize:20,fontWeight:FontWeight.bold, color:Colors.black ),),
                         Text("Seiyun University-Expected Graduation Date:2027",style: TextStyle(fontWeight:FontWeight.bold, color:Colors.deepOrange ),),
                         SizedBox(height: 7,),
@@ -76,14 +81,15 @@ class MyApp extends StatelessWidget {
                         SizedBox(height: 7,),
                         Text("3-I hold a Diploma in Computer Studies",style: TextStyle(fontSize:20,fontWeight:FontWeight.bold, color:Colors.black ),),
                       ],
-                    )
-                  ],
-                ),
+                    ),
+
+
 
                 Divider(color: Colors.white,thickness: 3,),
                 Text("Practical Skills",style: TextStyle(fontSize:25,fontWeight:FontWeight.bold, color:Colors.purpleAccent),),
-                Row(
-                  children: [
+
+
+
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -111,8 +117,8 @@ class MyApp extends StatelessWidget {
 
                       ],
                     )
-                  ],
-                )
+
+
               ],
             ),
 
@@ -121,7 +127,7 @@ class MyApp extends StatelessWidget {
       ),
     ),
       ),
-      ),
+
     );
 
   }
